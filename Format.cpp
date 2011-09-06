@@ -52,9 +52,10 @@ String formatFloat(double value, int places, int* string_width)
   }
   else
   {
+
     //get the integral part and
     //get the number of places to the left of decimal
-    num_width += ((int)log10((int)value)) + 1;
+    num_width += ((int)log10(abs(value))) + 1;
   }
   //if the value in less than 0
   if (value < 0.0)
