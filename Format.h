@@ -6,7 +6,11 @@
 #ifndef Format_h
 #define Format_h
 
-#include "WProgram.h"
+#if (ARDUINO >= 100)
+ #include "Arduino.h"
+#else
+ #include "WProgram.h"
+#endif
 
 String formatFloat(double value, int places, int* string_width);
 #endif

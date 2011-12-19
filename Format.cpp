@@ -3,7 +3,6 @@
 	Created by Derek Chafin, August 30, 2011
 	Released into the public domain.
 */
-#include "WProgram.h"
 #include "Format.h"
 
 String formatFloat(double value, int places, int* string_width)
